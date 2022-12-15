@@ -537,6 +537,7 @@
               height: 38px;
               text-align: center;
               padding: 0 9px;
+              margin-right: 3px;
             }
           }
           .btn-add {
@@ -545,7 +546,8 @@
               width: 204px;
               height: 38px;
               text-align: center;
-              padding: 0 19px;
+              padding: 0 12px;
+              margin-left: 10px;
             }
           }
           .btn-top {
@@ -639,6 +641,7 @@
         @include mobile {
           font-size: 15px;
           line-height: 20px;
+          padding: 0 20px;
         }
       }
     }
