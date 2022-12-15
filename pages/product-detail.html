@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style/font-awesome/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/product-detail.css" />
+  </head>
+  <body>
+    <div class="home product-detail">
+      <div id="header" class="home-header">
+        <div class="home-header__logo">
+          <a href="../pages/index.html">
+            <img id="logo-web" src="../images/logo-web.png" width="333" height="82" alt="" />
+            <img id="logo-mobile" src="../images/logo-mobile.png" width="65" height="66" alt="" />
+          </a>
+        </div>
+        <div class="home-header__search">
+          <input type="text" class="input" placeholder="Tìm kiếm" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="home-header__cart">
+          <a href="../pages/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+        <div class="home-header__avt">
+          <a href="../pages/personal-page.html">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
+        </div>
+        <div class="home-header__text">
+          <a href="../pages/personal-page.html"> quangminhle123 </a>
+        </div>
+      </div>
+      <div id="menu" class="home-menu">
+        <ul class="text-white">
+          <li style="margin-left: 0">
+            <a href="../pages/index.html">TRANG CHỦ</a>
+          </li>
+          <li>
+            <a href="../pages/category.html">DANH MỤC SẢN PHẨM</a>
+          </li>
+          <li>
+            <a href="../pages/favorite.html">YÊU THÍCH</a>
+          </li>
+          <li>
+            <a href="../pages/news.html">TIN TỨC</a>
+          </li>
+          <li>
+            <a href="../pages/introduce.html">GIỚI THIỆU</a>
+          </li>
+          <li>
+            <a href="../pages/contact.html">LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+      <div id="menu-mobile" class="menu-mobile">
+        <div class="topnav">
+          <a href="#home" class="active"></a>
+          <div id="myLinks">
+            <a href="../pages/index.html">TRANG CHỦ</a>
+            <a href="../pages/category.html">DANH MỤC SẢN PHẨM</a>
+            <a href="../pages/favorite.html">YÊU THÍCH</a>
+            <a href="../pages/news.html">TIN TỨC</a>
+            <a href="../pages/introduce.html">GIỚI THIỆU</a>
+            <a href="../pages/contact.html">LIÊN HỆ</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <div class="product-detail__nav">
+        <div class="container">
+          <p>Trang chủ > Chi tiết sản phẩm</p>
+        </div>
+      </div>
+      <div class="product-detail__info">
+        <div class="detail-top row">
+          <div class="detail-left col col-lg-7 col-sm-12">
+            <div class="detail-left__img">
+              <img src="../images/detail.png" />
+            </div>
+            <div class="detail-left__cat row">
+              <div class="col col-lg-3 col-sm-3">
+                <div class="detail-left__cat--img">
+                  <img src="../images/detail-1.png" />
+                </div>
+              </div>
+              <div class="col col-lg-3 col-sm-3">
+                <div class="detail-left__cat--img">
+                  <img src="../images/detail-2.png" alt="" />
+                </div>
+              </div>
+              <div class="col col-lg-3 col-sm-3">
+                <div class="detail-left__cat--img">
+                  <img src="../images/detail-3.png" alt="" />
+                </div>
+              </div>
+              <div class="col col-lg-3 col-sm-3">
+                <div class="detail-left__cat--img">
+                  <img src="../images/detail-4.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail-right col col-lg-5 col-sm-12">
+            <div class="detail-right__name">
+              <h2>Nike Zoom Fly 5</h2>
+            </div>
+            <div class="detail-right__content">
+              <div class="content-item price row">
+                <span class="col col-lg-4">Giá tiền</span>
+                <h2 class="col col-lg-8">433.000đ</h2>
+              </div>
+              <div class="content-item color row">
+                <span class="col col-lg-4">Màu sắc</span>
+                <div class="list-color col col-lg-8">
+                  <ul>
+                    <li class="color-item">Đen</li>
+                    <li class="color-item">Trắng</li>
+                    <li class="color-item">Vàng</li>
+                    <li class="color-item">Xanh</li>
+                  </ul>
+                  <ul>
+                    <li class="color-item">Cam</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content-item size row">
+                <span class="col col-lg-4">Size</span>
+                <div class="list-size col col-lg-8">
+                  <ul>
+                    <li class="size-item">36</li>
+                    <li class="size-item">37</li>
+                    <li class="size-item">38</li>
+                    <li class="size-item">39</li>
+                  </ul>
+                  <ul>
+                    <li class="size-item">40</li>
+                    <li class="size-item">41</li>
+                    <li class="size-item">42</li>
+                    <li class="size-item">43</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content-item amount">
+                <span class="col col-lg-4">Số lượng</span>
+                <div class="choose-amount col col-lg-8">
+                  <button onclick="buttonDecrese();">-</button>
+                  <input type="text" id="inc" value="0" />
+                  <button onclick="buttonIncrese();">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="detail-right__bot">
+              <div class="btn-top">
+                <button class="btn btn-favor d-flex align-items-center" onClick="showModalFavorite()">
+                  <i class="fa-solid fa-heart"></i>
+                  <p class="mb-0">Yêu thích</p>
+                </button>
+                <button class="btn btn-add d-flex align-items-center" onClick="showModalAdd()">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <p class="mb-0">Thêm vào giỏ hàng</p>
+                </button>
+              </div>
+              <div class="btn-bot">
+                <button><a href="../pages/payment.html">Mua ngay</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-middle"></div>
+        <div class="detail-bottom"></div>
+      </div>
+      <div class="product-detail__section container mb-5">
+        <div class="tab">
+          <div class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Mô tả sản phẩm</div>
+          <div class="tablinks" onclick="openCity(event, 'Paris')">Đánh giá</div>
+        </div>
+        <div id="London" class="tabcontent">
+          <div class="describe">
+            <div>
+              <p>
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                Mẫu giày đang cực kỳ hot và năng động với mẫu cổ cao cổ thấp các màu, sản phẩm dễ phối đồ và đeo cực kỳ êm chân... mọi người không cần bỏ ra số tiền quá lớn mà vẫn sở hữu được sản phẩm ưng ý khi đến với shop mình.
+                <i class="fa-solid fa-fire-flame-curved"></i>
+              </p>
+            </div>
+            <div>
+              <p>
+                <i class="fa-solid fa-gift"></i>
+                Cam kết:
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Hàng thật 100% như hình.
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Qúy khách được đổi trả thoải mái nếu sản phẩm có vấn đề cũng như chuyện lỡ đặt không vừa size.
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Nhận hàng TRƯỚC - thu tiền SAU... cho kiểm hàng thoải mái khi nhận hàng.
+              </p>
+            </div>
+            <div>
+              <p>
+                <i class="fa-solid fa-gift"></i>
+                [HÌNH ẢNH và MÔ TẢ]:
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                100% ảnh thật được chúng tôi chụp bằng điện thoại cá nhân
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Giày đẹp, nhẹ, bền. Giá phải chăng phù hợp với các bạn học sinh, sinh viên. Có thể làm giày đôi, giày nhóm. Thích hợp đi chơi, du lịch, chạy bộ, gym, đi học, đi làm...
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Dễ phối đồ, có thể kết hợp với váy, jeans, sooc... Phù hợp với mọi thời tiết từ đông sang hè.
+              </p>
+            </div>
+            <div>
+              <p>
+                <i class="fa-solid fa-gift"></i>
+                LỜI MUỐN NÓI:
+              </p>
+              <p>Cảm ơn các bạn đã đến với chúng tôi. Sau khi nhận giày xong nếu có vấn đề nào bạn chưa vừa lòng làm ơn hãy liên hệ ngay với chúng tôi để được hỗ trợ và giải quyết. Các bạn hãy vui lòng dành chút thời gian đánh giá sản phẩm để shop lấy động lực phục vụ các bạn tốt hơn nhé!!</p>
+              <p>Cảm ơn bạn đã quan tâm. Đừng quên theo dõi shop! Bạn sẽ được cập nhật những mẫu giày mới nhất trên thị trường !!!</p>
+              <br />
+              <p>#giaythethao#giaynamthethao #giaythethaohot #giaythethaonamhot</p>
+            </div>
+          </div>
+        </div>
+        <div id="Paris" class="tabcontent">
+          <div class="reviews">
+            <div class="title">
+              <h2>Đánh giá sản phẩm</h2>
+              <p>Chia sẻ mức độ hài lòng của bạn với sản phẩm</p>
+            </div>
+            <div class="reviews-star">
+              <p class="sum-review">5/5</p>
+              <div class="list-star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="count-review">4 đánh giá</p>
+            </div>
+            <div class="comment">
+              <div class="comment-user">
+                <img src="../images/user-cmt.png" />
+              </div>
+              <input type="text" placeholder="Thêm bình luận..." />
+            </div>
+            <div class="user-comment">
+              <div class="user-img">
+                <img src="../images/user-cmt.png" />
+              </div>
+              <div class="user-info">
+                <span>Lê Minh Quang</span>
+                <p>Giày rất đẹp, xứng đáng với giá tiền</p>
+              </div>
+            </div>
+            <div class="user-comment">
+              <div class="user-img">
+                <img src="../images/user-cmt-1.png" />
+              </div>
+              <div class="user-info">
+                <span>Quang Lê</span>
+                <p>Giày đúng như hình, ship nhanh</p>
+              </div>
+            </div>
+            <div class="user-comment">
+              <div class="user-img">
+                <img src="../images/user-cmt-2.png" />
+              </div>
+              <div class="user-info">
+                <span>Minh Quang</span>
+                <p>Giày xịn, lần sau mua nữa, shop nhiệt tình, uy tín, ủng hộ shop</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-detail__ads container">
+        <div class="title text-center">
+          <p>Sản phẩm liên quan</p>
+        </div>
+        <div class="products row">
+          <div class="col-md-3 col-sm-6 col-6">
+            <div class="products-item">
+              <div class="products-item__img">
+                <img src="../images/detail-5.png" alt="" />
+              </div>
+              <div class="products-item__info">
+                <span>Giày jordan</span>
+                <p>đ 799.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6">
+            <div class="products-item">
+              <div class="products-item__img">
+                <img src="../images/detail-6.png" alt="" />
+              </div>
+              <div class="products-item__info">
+                <span>Giày thể thao utraboot</span>
+                <p>đ 599.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6">
+            <div class="products-item">
+              <div class="products-item__img">
+                <img src="../images/detail-7.png" alt="" />
+              </div>
+              <div class="products-item__info">
+                <span>Giày đá bóng nam</span>
+                <p>đ 299.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6">
+            <div class="products-item">
+              <div class="products-item__img">
+                <img src="../images/detail-8.png" alt="" />
+              </div>
+              <div class="products-item__info">
+                <span>Giày thể thao nữ</span>
+                <p>đ 599.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-footer">
+        <div class="footer row">
+          <div class="col-lg-4">
+            <div class="footer-item footer-left">
+              <div class="text-center">
+                <span class="title">Thông tin liên hệ</span>
+              </div>
+              <ul>
+                <li class="d-flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <p>225 Quan Hoa, Cầu Giấy, Hà Nội</p>
+                </li>
+                <li class="d-flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <p>0095954456</p>
+                </li>
+                <li class="d-flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <p>0095954456</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-item footer-middle">
+              <div class="text-center">
+                <span class="title">Theo dõi chúng tôi trên</span>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img src="../images/footer-social.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-item footer-right">
+              <div class="text-center">
+                <span class="title">Chăm sóc khách hàng</span>
+              </div>
+              <ul>
+                <li>Trung tâm trợ giúp</li>
+                <li>Cách thức mua hàng</li>
+                <li>Thanh toán</li>
+                <li>Vận chuyển</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal js-modal-favorite">
+        <div class="modal__overlay" onClick="hiddenModal()"></div>
+
+        <div class="modal__body animate__animated animate__bounceInDown">
+          <div class="modal__inner">
+            <div class="img">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="text">
+              <p>Sản phẩm đã được thêm vào Yêu thích</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal js-modal-add">
+        <div class="modal__overlay" onClick="hiddenModalAdd()"></div>
+
+        <div class="modal__body animate__animated animate__bounceInDown">
+          <div class="modal__inner">
+            <div class="img">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="text">
+              <p>Sản phẩm đã được thêm vào Giỏ hàng</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  .ahihi {
+    margin-left: 100% !important;
+  }
+  .show-hidden {
+    display: none !important;
+  }
+  .show {
+    display: block !important;
+  }
+</style>
+<script>
+  var y = screen.width;
+  var x = document.getElementById('menu');
+  var z = document.getElementById('menu-mobile');
+  var logo = document.getElementById('logo-web');
+  var logoMobile = document.getElementById('logo-mobile');
+  if (y < 480) {
+    x.classList.remove('show');
+    x.classList.add('show-hidden');
+    z.classList.remove('show-hidden');
+    z.classList.add('show');
+    logo.classList.remove('show');
+    logo.classList.add('show-hidden');
+    logoMobile.classList.remove('show-hidden');
+    logoMobile.classList.add('show');
+  }
+  window.addEventListener('resize', function (event) {
+    var x = document.getElementById('menu');
+    var z = document.getElementById('menu-mobile');
+    var logo = document.getElementById('logo-web');
+    var logoMobile = document.getElementById('logo-mobile');
+
+    if (document.body.clientWidth < 480) {
+      x.classList.remove('show');
+      x.classList.add('show-hidden');
+      z.classList.remove('show-hidden');
+      z.classList.add('show');
+      logo.classList.remove('show');
+      logo.classList.add('show-hidden');
+      logoMobile.classList.remove('show-hidden');
+      logoMobile.classList.add('show');
+    } else if (document.body.clientWidth > 1365) {
+      x.classList.remove('show-hidden');
+      x.classList.add('show');
+      z.classList.remove('show');
+      z.classList.add('show-hidden');
+      logo.classList.remove('show-hidden');
+      logo.classList.add('show');
+      logoMobile.classList.remove('show');
+      logoMobile.classList.add('show-hidden');
+    }
+  });
+  function openNav() {
+    document.getElementById('myLinks').classList.toggle('ahihi');
+  }
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName('tabcontent');
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = 'none';
+    }
+    tablinks = document.getElementsByClassName('tablinks');
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(' active', '');
+    }
+    document.getElementById(cityName).style.display = 'block';
+    evt.currentTarget.className += ' active';
+  }
+  document.getElementById('defaultOpen').click();
+
+  function showModalFavorite() {
+    const modalLogin = document.querySelector('.js-modal-favorite');
+    modalLogin.classList.add('open');
+    setTimeout(hiddenModal, 1000);
+  }
+  function hiddenModal() {
+    const modalLogin = document.querySelector('.js-modal-favorite');
+    modalLogin.classList.remove('open');
+  }
+
+  function showModalAdd() {
+    const modalLogin = document.querySelector('.js-modal-add');
+    modalLogin.classList.add('open');
+    setTimeout(hiddenModalAdd, 1000);
+  }
+
+  function hiddenModalAdd() {
+    const modalLogin = document.querySelector('.js-modal-add');
+    modalLogin.classList.remove('open');
+  }
+
+  const items = document.querySelectorAll('.color-item');
+  items.forEach((item) => {
+    item.addEventListener('click', function () {
+      items.forEach((a) => {
+        a.classList.remove('active');
+      });
+      item.classList.add('active');
+    });
+  });
+
+  const listSize = document.querySelectorAll('.size-item');
+  listSize.forEach((e) => {
+    e.addEventListener('click', function () {
+      listSize.forEach((a) => {
+        a.classList.remove('active');
+      });
+      e.classList.add('active');
+    });
+  });
+
+  var i = 0;
+  function buttonDecrese() {
+    if (i > 0) {
+      i--;
+      document.getElementById('inc').value = i;
+    }
+  }
+  function buttonIncrese() {
+    i++;
+    document.getElementById('inc').value = i;
+  }
+</script>

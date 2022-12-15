@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style/font-awesome/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/cart.css" />
+  </head>
+  <body>
+    <div class="home product-detail cart">
+      <div id="header" class="home-header">
+        <div class="home-header__logo">
+          <a href="../pages/index.html">
+            <img id="logo-web" src="../images/logo-web.png" width="333" height="82" alt="" />
+            <img id="logo-mobile" src="../images/logo-mobile.png" width="65" height="66" alt="" />
+          </a>
+        </div>
+        <div class="home-header__search">
+          <input type="text" class="input" placeholder="Tìm kiếm" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="home-header__cart">
+          <a href="../pages/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+        <div class="home-header__avt">
+          <a href="../pages/personal-page.html">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
+        </div>
+        <div class="home-header__text">
+          <a href="../pages/personal-page.html"> quangminhle123 </a>
+        </div>
+      </div>
+      <div id="menu" class="home-menu">
+        <ul class="text-white">
+          <li style="margin-left: 0">
+            <a href="../pages/index.html">TRANG CHỦ</a>
+          </li>
+          <li>
+            <a href="../pages/category.html">DANH MỤC SẢN PHẨM</a>
+          </li>
+          <li>
+            <a href="../pages/favorite.html">YÊU THÍCH</a>
+          </li>
+          <li>
+            <a href="../pages/news.html">TIN TỨC</a>
+          </li>
+          <li>
+            <a href="../pages/introduce.html">GIỚI THIỆU</a>
+          </li>
+          <li>
+            <a href="../pages/contact.html">LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+      <div id="menu-mobile" class="menu-mobile">
+        <div class="topnav">
+          <a href="#home" class="active"></a>
+          <div id="myLinks">
+            <a href="../pages/index.html">TRANG CHỦ</a>
+            <a href="../pages/category.html">DANH MỤC SẢN PHẨM</a>
+            <a href="../pages/favorite.html">YÊU THÍCH</a>
+            <a href="../pages/news.html">TIN TỨC</a>
+            <a href="../pages/introduce.html">GIỚI THIỆU</a>
+            <a href="../pages/contact.html">LIÊN HỆ</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <div class="product-detail__nav">
+        <div class="container">
+          <p>Trang chủ > Giỏ hàng</p>
+        </div>
+      </div>
+      <div class="cart-desc container">
+        <div class="cart-desc__pro">
+          <input type="checkbox" />
+          <p>Sản phẩm</p>
+        </div>
+        <div class="cart-desc__price">
+          <p>Đơn giá</p>
+        </div>
+        <div class="cart-desc__amount">
+          <p>Số lượng</p>
+        </div>
+        <div class="cart-desc__money">
+          <p>Thành tiền</p>
+        </div>
+      </div>
+      <div class="cart-list container">
+        <div class="cart-item row">
+          <div class="col col-lg-5 col-sm-4">
+            <div class="left d-flex">
+              <input type="checkbox" />
+              <div class="img">
+                <img src="../images/cart-1.png" alt="" />
+              </div>
+              <p>Giày thể thao nam jordan cao cổ (size 42, đen)</p>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-sm-4">
+            <div class="middle">
+              <div class="middle-price">
+                <p>đ 433.000</p>
+              </div>
+              <div class="middle-amount">
+                <div class="box decrese">
+                  <p>-</p>
+                </div>
+                <div class="box amount">
+                  <p>2</p>
+                </div>
+                <div class="box increse">
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-sm-4">
+            <div class="right">
+              <div class="right-money">
+                <p>đ 866.000đ</p>
+              </div>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item row">
+          <div class="col col-lg-5 col-sm-4">
+            <div class="left d-flex">
+              <input type="checkbox" />
+              <div class="img">
+                <img src="../images/cart-2.png" alt="" />
+              </div>
+              <p>Giày thể thao nam jordan cao cổ (size 42, đen)</p>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-sm-4">
+            <div class="middle">
+              <div class="middle-price">
+                <p>đ 433.000</p>
+              </div>
+              <div class="middle-amount">
+                <div class="box decrese">
+                  <p>-</p>
+                </div>
+                <div class="box amount">
+                  <p>2</p>
+                </div>
+                <div class="box increse">
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-sm-4">
+            <div class="right">
+              <div class="right-money">
+                <p>đ 866.000đ</p>
+              </div>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item row">
+          <div class="col col-lg-5 col-sm-4">
+            <div class="left d-flex">
+              <input type="checkbox" />
+              <div class="img">
+                <img src="../images/cart-3.png" alt="" />
+              </div>
+              <p>Giày thể thao nam jordan cao cổ (size 42, đen)</p>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-sm-4">
+            <div class="middle">
+              <div class="middle-price">
+                <p>đ 433.000</p>
+              </div>
+              <div class="middle-amount">
+                <div class="box decrese">
+                  <p>-</p>
+                </div>
+                <div class="box amount">
+                  <p>2</p>
+                </div>
+                <div class="box increse">
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-sm-4">
+            <div class="right">
+              <div class="right-money">
+                <p>đ 866.000đ</p>
+              </div>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item row">
+          <div class="col col-lg-5 col-sm-4">
+            <div class="left d-flex">
+              <input type="checkbox" />
+              <div class="img">
+                <img src="../images/cart-4.png" alt="" />
+              </div>
+              <p>Giày thể thao nam jordan cao cổ (size 42, đen)</p>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-sm-4">
+            <div class="middle">
+              <div class="middle-price">
+                <p>đ 433.000</p>
+              </div>
+              <div class="middle-amount">
+                <div class="box decrese">
+                  <p>-</p>
+                </div>
+                <div class="box amount">
+                  <p>2</p>
+                </div>
+                <div class="box increse">
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-sm-4">
+            <div class="right">
+              <div class="right-money">
+                <p>đ 866.000đ</p>
+              </div>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item row">
+          <div class="col col-lg-5 col-sm-4">
+            <div class="left d-flex">
+              <input type="checkbox" />
+              <div class="img">
+                <img src="../images/cart-5.png" alt="" />
+              </div>
+              <p>Giày thể thao nam jordan cao cổ (size 42, đen)</p>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-sm-4">
+            <div class="middle">
+              <div class="middle-price">
+                <p>đ 433.000</p>
+              </div>
+              <div class="middle-amount">
+                <div class="box decrese">
+                  <p>-</p>
+                </div>
+                <div class="box amount">
+                  <p>2</p>
+                </div>
+                <div class="box increse">
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-sm-4">
+            <div class="right">
+              <div class="right-money">
+                <p>đ 866.000đ</p>
+              </div>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item row">
+          <div class="col col-lg-5 col-sm-4">
+            <div class="left d-flex">
+              <input type="checkbox" />
+              <div class="img">
+                <img src="../images/cart-6.png" alt="" />
+              </div>
+              <p>Giày thể thao nam jordan cao cổ (size 42, đen)</p>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-sm-4">
+            <div class="middle">
+              <div class="middle-price">
+                <p>đ 433.000</p>
+              </div>
+              <div class="middle-amount">
+                <div class="box decrese">
+                  <p>-</p>
+                </div>
+                <div class="box amount">
+                  <p>2</p>
+                </div>
+                <div class="box increse">
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-sm-4">
+            <div class="right">
+              <div class="right-money">
+                <p>đ 866.000đ</p>
+              </div>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item row">
+          <div class="col col-lg-5 col-sm-4">
+            <div class="left d-flex">
+              <input type="checkbox" />
+              <div class="img">
+                <img src="../images/cart-7.png" alt="" />
+              </div>
+              <p>Giày thể thao nam jordan cao cổ (size 42, đen)</p>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-sm-4">
+            <div class="middle">
+              <div class="middle-price">
+                <p>đ 433.000</p>
+              </div>
+              <div class="middle-amount">
+                <div class="box decrese">
+                  <p>-</p>
+                </div>
+                <div class="box amount">
+                  <p>2</p>
+                </div>
+                <div class="box increse">
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-sm-4">
+            <div class="right">
+              <div class="right-money">
+                <p>đ 866.000đ</p>
+              </div>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item row">
+          <div class="col col-lg-5 col-sm-4">
+            <div class="left d-flex">
+              <input type="checkbox" />
+              <div class="img">
+                <img src="../images/cart-8.png" alt="" />
+              </div>
+              <p>Giày thể thao nam jordan cao cổ (size 42, đen)</p>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-sm-4">
+            <div class="middle">
+              <div class="middle-price">
+                <p>đ 433.000</p>
+              </div>
+              <div class="middle-amount">
+                <div class="box decrese">
+                  <p>-</p>
+                </div>
+                <div class="box amount">
+                  <p>2</p>
+                </div>
+                <div class="box increse">
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-43col-sm-4">
+            <div class="right">
+              <div class="right-money">
+                <p>đ 866.000đ</p>
+              </div>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-total container">
+        <button class="left js-delete" onClick="openModal()">
+          <i class="fa-solid fa-trash-can"></i>
+          <div>
+            <p>Xoá tất cả?</p>
+          </div>
+        </button>
+        <div class="right">
+          <h2>TỔNG TIỀN HÀNG (3 SẢN PHẨM)</h2>
+        </div>
+      </div>
+      <div class="cart-money container">
+        <span>2.554.000 đ</span>
+      </div>
+      <div class="cart-btn container">
+        <div class="button">
+          <a href="../pages/payment.html">THANH TOÁN</a>
+        </div>
+      </div>
+      <div class="home-footer">
+        <div class="footer row">
+          <div class="col-lg-4">
+            <div class="footer-item footer-left">
+              <div class="text-center">
+                <span class="title">Thông tin liên hệ</span>
+              </div>
+              <ul>
+                <li class="d-flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <p>225 Quan Hoa, Cầu Giấy, Hà Nội</p>
+                </li>
+                <li class="d-flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <p>0095954456</p>
+                </li>
+                <li class="d-flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <p>0095954456</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-item footer-middle">
+              <div class="text-center">
+                <span class="title">Theo dõi chúng tôi trên</span>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img src="../images/footer-social.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-item footer-right">
+              <div class="text-center">
+                <span class="title">Chăm sóc khách hàng</span>
+              </div>
+              <ul>
+                <li>Trung tâm trợ giúp</li>
+                <li>Cách thức mua hàng</li>
+                <li>Thanh toán</li>
+                <li>Vận chuyển</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal js-modal-delete">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body animate__animated animate__bounceInDown">
+          <div class="modal__inner">
+            <p>Bạn có muốn bỏ 3 sản phẩm?</p>
+            <div class="modal__btn">
+              <button class="back" onClick="hideModal()">
+                <p>Trở lại</p>
+              </button>
+              <button class="ok_btn" type="button" onClick="hideModal()">
+                <p>Có</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  .ahihi {
+    margin-left: 100% !important;
+  }
+  .show-hidden {
+    display: none !important;
+  }
+  .show {
+    display: block !important;
+  }
+</style>
+<script>
+  var y = screen.width;
+  var x = document.getElementById('menu');
+  var z = document.getElementById('menu-mobile');
+  var logo = document.getElementById('logo-web');
+  var logoMobile = document.getElementById('logo-mobile');
+  if (y < 480) {
+    x.classList.remove('show');
+    x.classList.add('show-hidden');
+    z.classList.remove('show-hidden');
+    z.classList.add('show');
+    logo.classList.remove('show');
+    logo.classList.add('show-hidden');
+    logoMobile.classList.remove('show-hidden');
+    logoMobile.classList.add('show');
+  }
+  window.addEventListener('resize', function (event) {
+    var x = document.getElementById('menu');
+    var z = document.getElementById('menu-mobile');
+    var logo = document.getElementById('logo-web');
+    var logoMobile = document.getElementById('logo-mobile');
+
+    if (document.body.clientWidth < 480) {
+      x.classList.remove('show');
+      x.classList.add('show-hidden');
+      z.classList.remove('show-hidden');
+      z.classList.add('show');
+      logo.classList.remove('show');
+      logo.classList.add('show-hidden');
+      logoMobile.classList.remove('show-hidden');
+      logoMobile.classList.add('show');
+    } else if (document.body.clientWidth > 1365) {
+      x.classList.remove('show-hidden');
+      x.classList.add('show');
+      z.classList.remove('show');
+      z.classList.add('show-hidden');
+      logo.classList.remove('show-hidden');
+      logo.classList.add('show');
+      logoMobile.classList.remove('show');
+      logoMobile.classList.add('show-hidden');
+    }
+  });
+  function openNav() {
+    document.getElementById('myLinks').classList.toggle('ahihi');
+  }
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName('tabcontent');
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = 'none';
+    }
+    tablinks = document.getElementsByClassName('tablinks');
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(' active', '');
+    }
+    document.getElementById(cityName).style.display = 'block';
+    evt.currentTarget.className += ' active';
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById('defaultOpen').click();
+
+  function openModal() {
+    const openBtnLogin = document.querySelector('.js-delete');
+    const modalLogin = document.querySelector('.js-modal-delete');
+    modalLogin.classList.add('open');
+  }
+  function hideModal() {
+    const modalLogin = document.querySelector('.js-modal-delete');
+    modalLogin.classList.remove('open');
+  }
+</script>

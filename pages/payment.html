@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style/font-awesome/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/payment.css" />
+  </head>
+  <body>
+    <div class="home product-detail cart">
+      <div id="header" class="home-header">
+        <div class="home-header__logo">
+          <a href="../pages/index.html">
+            <img id="logo-web" src="../images/logo-web.png" width="333" height="82" alt="" />
+            <img id="logo-mobile" src="../images/logo-mobile.png" width="65" height="66" alt="" />
+          </a>
+        </div>
+        <div class="home-header__search">
+          <input type="text" class="input" placeholder="Tìm kiếm" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="home-header__cart">
+          <a href="../pages/cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+        <div class="home-header__avt">
+          <a href="../pages/personal-page.html">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
+        </div>
+        <div class="home-header__text">
+          <a href="../pages/personal-page.html"> quangminhle123 </a>
+        </div>
+      </div>
+      <div id="menu" class="home-menu">
+        <ul class="text-white">
+          <li style="margin-left: 0">
+            <a href="../pages/index.html">TRANG CHỦ</a>
+          </li>
+          <li>
+            <a href="../pages/category.html">DANH MỤC SẢN PHẨM</a>
+          </li>
+          <li>
+            <a href="../pages/favorite.html">YÊU THÍCH</a>
+          </li>
+          <li>
+            <a href="../pages/news.html">TIN TỨC</a>
+          </li>
+          <li>
+            <a href="../pages/introduce.html">GIỚI THIỆU</a>
+          </li>
+          <li>
+            <a href="../pages/contact.html">LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+      <div id="menu-mobile" class="menu-mobile">
+        <div class="topnav">
+          <a href="#home" class="active"></a>
+          <div id="myLinks">
+            <a href="../pages/index.html">TRANG CHỦ</a>
+            <a href="../pages/category.html">DANH MỤC SẢN PHẨM</a>
+            <a href="../pages/favorite.html">YÊU THÍCH</a>
+            <a href="../pages/news.html">TIN TỨC</a>
+            <a href="../pages/introduce.html">GIỚI THIỆU</a>
+            <a href="../pages/contact.html">LIÊN HỆ</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <div class="product-detail__nav">
+        <div class="container">
+          <p>Trang chủ > Thanh toán</p>
+        </div>
+      </div>
+      <div class="payment-info">
+        <h2>THÔNG TIN NHẬN HÀNG</h2>
+        <div class="form-info">
+          <div class="item-input">
+            <input type="text" value="quangzzzzz12345@gmail.com" />
+          </div>
+          <div class="item-input">
+            <input type="text" value="Lê Minh Quang" />
+          </div>
+          <div class="item-input">
+            <input type="text" value="0948700485" />
+          </div>
+          <div class="item-input">
+            <input type="text" value="Số 5, ngõ 225 Quan Hoa" />
+          </div>
+          <div class="item-input">
+            <input type="text" value="Phường Quan Hoa, Quận Cầu Giáy, Hà Nội" />
+          </div>
+          <div class="item-input">
+            <input type="text" value="Vào đầu ngõ rẽ tay phải" />
+          </div>
+          <div class="item-btn">
+            <button onClick="openModal()">Thay đổi địa chỉ nhận hàng</button>
+          </div>
+        </div>
+      </div>
+      <div class="payment-pro">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Sản phẩm</th>
+              <th>Đơn giá</th>
+              <th>Số lượng</th>
+              <th>Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="img-pro">
+                <img src="../images/payment-1.png" alt="" />
+              </td>
+              <td class="name-pro">Giày thể thao nam adidas (size 42, trắng)</td>
+              <td>đ 433.000</td>
+              <td>2</td>
+              <td>đ 866.000</td>
+            </tr>
+            <tr>
+              <td class="img-pro">
+                <img src="../images/payment-2.png" alt="" />
+              </td>
+              <td class="name-pro">Giày thể thao nam adidas (size 42, trắng)</td>
+              <td>đ 433.000</td>
+              <td>2</td>
+              <td>đ 866.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="payment-voucher container">
+        <div class="symbol">
+          <svg viewBox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M42.3125 12.875C42.7269 12.875 43.1243 12.7104 43.4174 12.4174C43.7104 12.1243 43.875 11.7269 43.875 11.3125V3.5C43.875 2.6712 43.5458 1.87634 42.9597 1.29029C42.3737 0.70424 41.5788 0.375 40.75 0.375H3.25C2.4212 0.375 1.62634 0.70424 1.04029 1.29029C0.45424 1.87634 0.125 2.6712 0.125 3.5V11.3125C0.125 11.7269 0.28962 12.1243 0.582646 12.4174C0.875671 12.7104 1.2731 12.875 1.6875 12.875C2.5163 12.875 3.31116 13.2042 3.89721 13.7903C4.48326 14.3763 4.8125 15.1712 4.8125 16C4.8125 16.8288 4.48326 17.6237 3.89721 18.2097C3.31116 18.7958 2.5163 19.125 1.6875 19.125C1.2731 19.125 0.875671 19.2896 0.582646 19.5826C0.28962 19.8757 0.125 20.2731 0.125 20.6875V28.5C0.125 29.3288 0.45424 30.1237 1.04029 30.7097C1.62634 31.2958 2.4212 31.625 3.25 31.625H40.75C41.5788 31.625 42.3737 31.2958 42.9597 30.7097C43.5458 30.1237 43.875 29.3288 43.875 28.5V20.6875C43.875 20.2731 43.7104 19.8757 43.4174 19.5826C43.1243 19.2896 42.7269 19.125 42.3125 19.125C41.4837 19.125 40.6888 18.7958 40.1028 18.2097C39.5167 17.6237 39.1875 16.8288 39.1875 16C39.1875 15.1712 39.5167 14.3763 40.1028 13.7903C40.6888 13.2042 41.4837 12.875 42.3125 12.875ZM40.75 22.0469V28.5H29.8125V23.8125H26.6875V28.5H3.25V22.0469C4.58749 21.6973 5.77135 20.9142 6.61629 19.82C7.46122 18.7258 7.91956 17.3824 7.91956 16C7.91956 14.6176 7.46122 13.2742 6.61629 12.18C5.77135 11.0858 4.58749 10.3027 3.25 9.95312V3.5H26.6875V8.1875H29.8125V3.5H40.75V9.95312C39.4125 10.3027 38.2286 11.0858 37.3837 12.18C36.5388 13.2742 36.0804 14.6176 36.0804 16C36.0804 17.3824 36.5388 18.7258 37.3837 19.82C38.2286 20.9142 39.4125 21.6973 40.75 22.0469Z" fill="#F3884D" />
+          </svg>
+          <span>VOUCHER</span>
+        </div>
+        <button>Giảm 10k</button>
+      </div>
+      <div class="payment-method container">
+        <h3>PHƯƠNG THỨC THANH TOÁN</h3>
+        <ul>
+          <li>
+            <input name="method" type="radio" />
+            <label for="method">Thanh toán khi nhận hàng (COD) </label>
+          </li>
+          <li>
+            <input name="method" type="radio" />
+            <label for="method">Thẻ Tín dụng/Ghi nợ </label>
+          </li>
+          <li>
+            <input name="method" type="radio" />
+            <label for="method">Thanh toán qua ví điện tử </label>
+          </li>
+        </ul>
+      </div>
+      <div class="payment-cal container">
+        <div class="payment-cal__item total-amount">
+          <span>TỔNG TIỀN HÀNG</span>
+          <span>đ 1.732.000</span>
+        </div>
+        <div class="payment-cal__item transport-fee">
+          <span>PHÍ VẬN CHUYỂN</span>
+          <span>đ 25.000</span>
+        </div>
+        <div class="payment-cal__item voucher">
+          <span>VOUCHER GIẢM GIÁ</span>
+          <span>-đ 10.000</span>
+        </div>
+      </div>
+      <div class="payment-total container">
+        <span>TỔNG THANH TOÁN</span>
+        <p>1.737.000 đ</p>
+      </div>
+      <div class="payment-order container">
+        <button><a href="../pages/order-success.html">ĐẶT HÀNG</a></button>
+      </div>
+      <div class="home-footer">
+        <div class="footer row">
+          <div class="col-lg-4">
+            <div class="footer-item footer-left">
+              <div class="text-center">
+                <span class="title">Thông tin liên hệ</span>
+              </div>
+              <ul>
+                <li class="d-flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <p>225 Quan Hoa, Cầu Giấy, Hà Nội</p>
+                </li>
+                <li class="d-flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <p>0095954456</p>
+                </li>
+                <li class="d-flex">
+                  <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <p>0095954456</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-item footer-middle">
+              <div class="text-center">
+                <span class="title">Theo dõi chúng tôi trên</span>
+              </div>
+              <div class="d-flex justify-content-center">
+                <img src="../images/footer-social.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-item footer-right">
+              <div class="text-center">
+                <span class="title">Chăm sóc khách hàng</span>
+              </div>
+              <ul>
+                <li>Trung tâm trợ giúp</li>
+                <li>Cách thức mua hàng</li>
+                <li>Thanh toán</li>
+                <li>Vận chuyển</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal js-modal-address">
+        <div class="modal__overlay" onClick="hideModal()"></div>
+
+        <div class="modal__body animate__animated animate__bounceInDown">
+          <div class="modal__inner">
+            <h3>Địa chỉ nhận hàng</h3>
+            <div class="modal__form">
+              <div class="item-input">
+                <input type="text" placeholder="Email" />
+              </div>
+              <div class="item-input">
+                <input type="text" placeholder="Họ và tên" />
+              </div>
+              <div class="item-input">
+                <input type="text" placeholder="Số điện thoại" />
+              </div>
+              <div class="item-input">
+                <input type="text" placeholder="Địa chỉ nhận hàng" />
+              </div>
+              <div class="item-input">
+                <input type="text" placeholder="Tỉnh/ Thành phố, Quận/Huyện, Phường/X" />
+              </div>
+              <div class="item-input">
+                <input type="text" placeholder="Ghi chú (nếu có)" />
+              </div>
+              <div class="item-btn">
+                <button onClick="hideModal()">Lưu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  .ahihi {
+    margin-left: 100% !important;
+  }
+  .show-hidden {
+    display: none !important;
+  }
+  .show {
+    display: block !important;
+  }
+</style>
+<script>
+  var y = screen.width;
+  var x = document.getElementById('menu');
+  var z = document.getElementById('menu-mobile');
+  var logo = document.getElementById('logo-web');
+  var logoMobile = document.getElementById('logo-mobile');
+  if (y < 480) {
+    x.classList.remove('show');
+    x.classList.add('show-hidden');
+    z.classList.remove('show-hidden');
+    z.classList.add('show');
+    logo.classList.remove('show');
+    logo.classList.add('show-hidden');
+    logoMobile.classList.remove('show-hidden');
+    logoMobile.classList.add('show');
+  }
+  window.addEventListener('resize', function (event) {
+    var x = document.getElementById('menu');
+    var z = document.getElementById('menu-mobile');
+    var logo = document.getElementById('logo-web');
+    var logoMobile = document.getElementById('logo-mobile');
+
+    if (document.body.clientWidth < 480) {
+      x.classList.remove('show');
+      x.classList.add('show-hidden');
+      z.classList.remove('show-hidden');
+      z.classList.add('show');
+      logo.classList.remove('show');
+      logo.classList.add('show-hidden');
+      logoMobile.classList.remove('show-hidden');
+      logoMobile.classList.add('show');
+    } else if (document.body.clientWidth > 1365) {
+      x.classList.remove('show-hidden');
+      x.classList.add('show');
+      z.classList.remove('show');
+      z.classList.add('show-hidden');
+      logo.classList.remove('show-hidden');
+      logo.classList.add('show');
+      logoMobile.classList.remove('show');
+      logoMobile.classList.add('show-hidden');
+    }
+  });
+  function openNav() {
+    document.getElementById('myLinks').classList.toggle('ahihi');
+  }
+
+  function openModal() {
+    const modalLogin = document.querySelector('.js-modal-address');
+    modalLogin.classList.add('open');
+  }
+  function hideModal() {
+    const modalLogin = document.querySelector('.js-modal-address');
+    modalLogin.classList.remove('open');
+  }
+</script>
