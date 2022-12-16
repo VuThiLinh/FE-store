@@ -159,6 +159,9 @@
 .home-menu ul li a:hover {
   color: #b8480b;
 }
+.home-menu ul .active-menu {
+  color: #b8480b;
+}
 .home .menu-mobile {
   display: none;
   max-width: 480px;
