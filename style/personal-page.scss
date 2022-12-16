@@ -222,7 +222,10 @@
       &-item {
         padding: 0 30px;
         @include mobile {
-          margin-bottom: 80px;
+          margin-bottom: 60px;
+        }
+        @include mini-mobile {
+          padding: 0 20px;
         }
         .title {
           font-size: 20px;
@@ -242,15 +245,24 @@
           }
           li {
             padding: 4px 0;
+            font-size: 16px;
             font-weight: 400;
-
+            line-height: 22px;
             .icon {
+              position: relative;
               margin-right: 20px;
-              i {
-                font-size: 1.4rem;
-                @include mobile {
-                  font-size: 1.2rem;
-                }
+              .home {
+                margin-top: -8px;
+              }
+              .home-1 {
+                position: absolute;
+                top: 5.5px;
+                left: 6.2px;
+              }
+              .email-1 {
+                position: absolute;
+                top: 5px;
+                left: 0;
               }
             }
           }
@@ -262,7 +274,7 @@
           width: 40%;
           height: auto;
           @include mobile {
-            width: 100%;
+            width: 90%;
           }
         }
       }
@@ -287,6 +299,12 @@
           }
         }
       }
+    }
+    @include mobile {
+      padding: 36px 53px;
+    }
+    @include mini-mobile {
+      padding: 40px 45px 20px 45px;
     }
   }
 }
@@ -406,6 +424,9 @@
       width: 360px;
       margin-bottom: 124px;
     }
+    @include mini-mobile {
+      padding: 0 20px;
+    }
     .personal-right {
       padding: 50px 38px 41px 38px;
       box-shadow: -4px 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -413,6 +434,9 @@
       @include mobile {
         box-shadow: none;
         padding: 31px 13px 15px 13px;
+      }
+      @include mini-mobile {
+        padding: 31px 8px 15px 8px;
       }
       &__title {
         border-bottom: 1px solid #000;
@@ -436,6 +460,9 @@
         @include mobile {
           padding-top: 24px;
         }
+        @include mini-mobile {
+          padding: 24px 14px 0 8px;
+        }
         .input-item {
           margin-bottom: 36px;
           padding: 0 20px;
@@ -454,6 +481,9 @@
           .label-name {
             @include mobile {
               margin-left: -5px;
+            }
+            @include mini-mobile {
+              margin-left: -8px;
             }
           }
           label {

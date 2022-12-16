@@ -1,9 +1,9 @@
-@import "mixin";
+@import 'mixin';
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
 
@@ -220,7 +220,10 @@
       &-item {
         padding: 0 30px;
         @include mobile {
-          margin-bottom: 80px;
+          margin-bottom: 60px;
+        }
+        @include mini-mobile {
+          padding: 0 20px;
         }
         .title {
           font-size: 20px;
@@ -240,8 +243,9 @@
           }
           li {
             padding: 4px 0;
+            font-size: 16px;
             font-weight: 400;
-
+            line-height: 22px;
             .icon {
               position: relative;
               margin-right: 20px;
@@ -268,7 +272,7 @@
           width: 40%;
           height: auto;
           @include mobile {
-            width: 100%;
+            width: 90%;
           }
         }
       }
@@ -293,6 +297,12 @@
           }
         }
       }
+    }
+    @include mobile {
+      padding: 36px 53px;
+    }
+    @include mini-mobile {
+      padding: 40px 45px 20px 45px;
     }
   }
 }

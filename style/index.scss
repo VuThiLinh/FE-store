@@ -639,6 +639,9 @@
         @include mobile {
           margin-bottom: 60px;
         }
+        @include mini-mobile {
+          padding: 0 20px;
+        }
         .title {
           font-size: 20px;
           font-weight: 700;
@@ -714,6 +717,9 @@
     }
     @include mobile {
       padding: 36px 53px;
+    }
+    @include mini-mobile {
+      padding: 40px 45px 20px 45px;
     }
   }
 }
